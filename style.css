@@ -106,8 +106,10 @@ background-color: var(--blue);
 }
 .content{
  color:var(--light);   
+ margin: 4em;
+ background: var(--blue);
 }
-.div-right{
+.div-text{
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -117,12 +119,12 @@ background-color: var(--blue);
     margin-top:5em;
 }
 
-.div-left{
+.div-img{
     width: 50%;
     display: flex;
-    
+    justify-content: center;
     align-items: center;
-    margin-left:6em;
+   
 }
 .section-text{
     font-size: 3em;

@@ -1,7 +1,16 @@
 
 body{
     margin: 0;
-    background:var(--background) ;
+    background-color: var(--background);
+    font-family: var(--main-font);
+    width: 100%;
+    height: 100%;
+}
+.every{
+    margin: 0;
+    background-image: url(images/etoile.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: var(--main-font);
     width: 100%;
     height: 100%;
@@ -9,7 +18,7 @@ body{
 :root{
     --primary: #fdb130;
     --secondary: #5c3987;
-    --background:#1f3dac;
+    --background:#0a144c;
     --blue:#349ec7;
     --light: #fff;
     --dark:#0a0a0a;
@@ -107,7 +116,7 @@ background-color: var(--blue);
 .content{
  color:var(--light);   
  margin: 4em;
- background: var(--blue);
+ background: #349dc763;
 }
 .div-text{
     display: flex;
@@ -133,6 +142,7 @@ background-color: var(--blue);
 .section-title{
     font-size: 6em;
     margin: 0em 1em;
+    color: var(--primary);
 }
 .section-content{
     width: 100%;
@@ -145,7 +155,8 @@ background-color: var(--blue);
 .science
 {
     color:var(--light);   
-    margin:0  4em;
+    margin:0;
+    padding: 0 4em;
     width:80%;
     font-size: 2.5em;
 }
@@ -153,13 +164,19 @@ background-color: var(--blue);
     display:flex;
     justify-content: center;
     color:var(--primary);
-   margin:1em 0 0 0;
-   font-size: 12em;
+    margin:0;
+    padding: 1em;
+    font-size: 12em;
 }
 .article-title{
-    color: #e9d05f;
+    padding-left: 1em;
+    color: #0ba3df;
 }
 .article-img{
     width: 50%;
     margin-left: 10em;
+}
+p{
+    margin: 0;
+    padding-bottom: 1em;
 }

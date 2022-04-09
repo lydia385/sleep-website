@@ -15,9 +15,20 @@ body{
     width: 100%;
     height: 100%;
     letter-spacing: 0em;
+    overflow-x: hidden;
+}
+.every-sleep{
+    margin: 0;
+    background-image: url(images/star.jpg);
+ 
+    font-family: var(--main-font);
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0em;
 }
 .every-dream{
     margin: 0;
+    padding:0 ;
     background-color: #311736;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -25,8 +36,14 @@ body{
     width: 100%;
     height: 100%;
     letter-spacing: 0em;
+    overflow-x: hidden;
+    
 
 }
+#dream{
+    padding-left: 10em;
+}
+/*nous avons definie notre palette de couleur , la police que nous utilistant*/
 :root{
     --primary: #fdb230;
     --secondary: #5c3987;
@@ -37,12 +54,14 @@ body{
     --rose:#d72d59;
     --main-font:'Sleep Night', sans-serif;
     --secondary-font: 'Barlow', sans-serif;
-    --sidePadding: 12%;
 }
 
+/*nav bar */
 
+/*main-nav : contient tout les elements de notre navbar , nous l'avons positioner en haut de notre page grace
+a    display: flex; flex-wrap: wrap; et fixer grace a position : fixer , nous avons definie  la coulour a primery 
+que nous avons definie dans  :root*/
 .main-nav{
-
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -58,12 +77,14 @@ body{
     padding-left: 1em;
     width: 7em;
 }
+/*main-nav-elements represente le contenue de notre nav*/
 .main-nav-elements{
     display: flex;
     margin: 0 0 0 auto;
     font-size:2em;  
     
 }
+
 .main-nav-element, .hover-element{
     list-style: none;
     text-transform: uppercase;
@@ -85,6 +106,8 @@ body{
 .main-nav-element:hover > a, .hover-element:hover > a {
     color:var(--blue);
 }
+/*nous avons mit la premiere image de home(index.html) dans div main et nous avons fait en sorte grace a ceci
+quelle soit placer juste apres la navbar et quelle recouvre tout le debut de la page */
 .main{
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,6 +119,18 @@ body{
     align-items: center;
     height: 100vh; 
 }
+/*est la class qui regroupe tout les element de la page resource */
+.main-res{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/sheep.gif);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh; 
+}
+/*est la class qui regroupe tout les element de la page dream */
 .main-dream{
     background-size: cover;
     background-image: url(images/dream.png);
@@ -108,6 +143,7 @@ body{
     height: 100vh;
    
 }
+/*est la class qui regroupe tout les element de la page medecine */
 .main-medicine{
     background-size: cover;
     background: url(images/istockphoto-1264153565-612x612.png);
@@ -121,6 +157,7 @@ body{
     height: 100vh;
     image-rendering: pixelated;
 }
+/*btn1 est le btn se trouvant dans la page home*/
 .btn1{
     background-color: var(--primary);
     border: none;
@@ -132,6 +169,7 @@ body{
     margin-bottom: 1em;
     cursor: pointer;
 }
+/*btn2 est le boutton  se trouvant dans la page dreams*/
 .btn2{
     background-color: #951d5100;
     border: solid var(--blue) 2PX;
@@ -143,7 +181,7 @@ body{
     font-size: 3em;
     cursor: pointer;
 }
-
+/*vu qu'on a mit un lien dans btn2 nous avant ajouterca pour que qu'on ne le percoit pas comme un text*/
 .btn2 > a {
     text-decoration: none;
     color: var(--light);
@@ -197,8 +235,10 @@ background-color: var(--blue);
     align-items: center;
 }
 .section-text{
+    
     font-size: 3em;
     margin: 1em 1em;
+    color: var(--light);
 }
 .section-title{
     font-size: 6em;
@@ -353,17 +393,23 @@ p{
   }
   .footer-basic {
       padding:40px 0;
-      background-color: var(--primary);
+      background-color: var(--blue);
       color: var(--light);
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      padding-left: 15%;
     }
     
     .footer-basic ul {
       padding:0;
       list-style:none;
-      text-align:center;
-      font-size:3em;
+     
+      font-size:2em;
       line-height:1.6;
       margin-bottom:0;
+      margin-top: 0;
     }
     
     .footer-basic li {
@@ -379,35 +425,19 @@ p{
     .footer-basic ul a:hover {
       opacity:1;
     }
-    
-    .footer-basic .social {
-      text-align:center;
-      padding-bottom:25px;
+    .foot-middle{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:50%;
     }
+ 
     
-    .footer-basic .social > a {
-      font-size:24px;
-      width:40px;
-      height:40px;
-      line-height:40px;
-      display:inline-block;
-      text-align:center;
-      border-radius:50%;
-      border:1px solid #ccc;
-      margin:0 8px;
-      color:inherit;
-      opacity:0.75;
-    }
     
-    .footer-basic .social > a:hover {
-      opacity:0.9;
-    }
     
-    .footer-basic .copyright {
-      margin-top:15px;
-      text-align:center;
-      font-size:2em;
-      color: var(--blue);
-      margin-bottom:0;
-    }
     
+   .video{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   }

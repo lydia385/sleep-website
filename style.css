@@ -1,11 +1,13 @@
-
+/* le body general*/
 body{
     margin: 0;
     background-color: var(--background);
     font-family: var(--main-font);
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
+/*la class du body de la page science*/
 .every-science{
     margin: 0;
     background-image: url(images/etoile.jpg);
@@ -17,18 +19,20 @@ body{
     letter-spacing: 0em;
     overflow-x: hidden;
 }
+/*la class du body de la page sleep*/
 .every-sleep{
     margin: 0;
     background-image: url(images/star.jpg);
- 
     font-family: var(--main-font);
     width: 100%;
     height: 100%;
     letter-spacing: 0em;
+    
     overflow-x: hidden;
 }
+/*la class du body de la page dream*/
 .every-dream{
-    margin: 0;
+    margin: 0 ;
     padding:0 ;
     background-color: #311736;
     background-repeat: no-repeat;
@@ -38,12 +42,8 @@ body{
     height: 100%;
     letter-spacing: 0em;
     overflow-x: hidden;
-    
+}
 
-}
-#dream{
-    padding-left: 10em;
-}
 /*nous avons definie notre palette de couleur , la police que nous utilistant*/
 :root{
     --primary: #fdb230;
@@ -78,6 +78,13 @@ que nous avons definie dans  :root*/
     padding-left: 1em;
     width: 7em;
 }
+ /*une class pour center les elements */
+ .center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+   }
 /*main-nav-elements represente le contenue de notre nav*/
 .main-nav-elements{
     display: flex;
@@ -144,6 +151,7 @@ quelle soit placer juste apres la navbar et quelle recouvre tout le debut de la 
     height: 100vh;
    
 }
+
 /*est la class qui regroupe tout les element de la page medecine */
 .main-medicine{
     background-size: cover;
@@ -204,8 +212,8 @@ background-color: var(--blue);
     display:flex;
     justify-content: center;
     color:#dadae8;
-    margin:0.5em 0 1em 0;
-    padding: 0.2em 0 0 0;
+    margin:0em 0 0.4em 0;
+    padding: 0.2em 0 0 1em;
     font-size: 7em;
     text-decoration: underline overline var(--rose);
 }
@@ -293,6 +301,7 @@ background-color: var(--blue);
     justify-content: center;
     color: #2294ac;
     font-size: 3em;
+    margin-left:2.5em;
 }
 /*le titre de chaque nouveau paragraphe de la page science*/
 .article-title{
@@ -330,6 +339,7 @@ p{
     margin-top: 40%;
 
 }
+/* le style de la carte qui contient les medicament */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -339,10 +349,7 @@ p{
     
   }
   
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
+  /* l'image du medicament */
   .card-image {
     border-radius: 5px 5px 0 0;
     width: 100%;
@@ -351,30 +358,29 @@ p{
   .container {
     padding: 2px 16px;
   }
+  /* le nom du medicament  */
+  .med-name{
+      font-size:4em;
+  }
+  /* la description du medicament  */
   .short-disc{
       font-size: 2em ;
   }
-  .med-name{
-      font-size:4em;
-
-  }
+  /* un container qui contient 4 carte de medicament */
   .medicines{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       margin: 4em;
   }
+  /* vu qu'il ya 10 types de medicament en cree cette class pour contenir 2 carte de medicament  */
   .medicines-final{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 4em;
   }
-  .med-disc{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-  }
+ 
   #dream
   {
       color:var(--light);   
@@ -395,7 +401,7 @@ p{
   .col{
       display: table-cell;
       margin: 0;
-    padding: 0%;
+      padding: 0%;
     
   }
   .p-dream > li {
@@ -448,19 +454,4 @@ p{
         justify-content: space-between;
         width:50%;
     }
-<<<<<<< Updated upstream
-    /*video de ressource*/
-   .video{
-=======
- 
-    
-    
-    
-    
-   .center{
->>>>>>> Stashed changes
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-   }
+   

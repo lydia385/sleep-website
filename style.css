@@ -448,8 +448,17 @@ p{
         justify-content: space-between;
         width:50%;
     }
+<<<<<<< Updated upstream
     /*video de ressource*/
    .video{
+=======
+ 
+    
+    
+    
+    
+   .center{
+>>>>>>> Stashed changes
     display:flex;
     justify-content: center;
     align-items: center;

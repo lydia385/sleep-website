@@ -16,7 +16,7 @@ body{
     height: 100%;
     letter-spacing: 0em;
 }
-.every2{
+.every-dream{
     margin: 0;
     background-color: #311736;
     background-repeat: no-repeat;
@@ -94,13 +94,12 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-   
+    height: 100vh; 
 }
 .main-dream{
-    background-repeat: no-repeat;
     background-size: cover;
     background-image: url(images/dream.png);
+    background-repeat: no-repeat;
     display: flex;
     text-align:center;
     flex-direction: column;
@@ -108,6 +107,19 @@ body{
     align-items: center;
     height: 100vh;
    
+}
+.main-medicine{
+    background-size: cover;
+    background: url(images/istockphoto-1264153565-612x612.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    image-rendering: pixelated;
 }
 .btn1{
     background-color: var(--primary);
@@ -131,12 +143,7 @@ body{
     font-size: 3em;
     cursor: pointer;
 }
-a > .btn2
-{
-    /* margin-top: 13em;
-    margin-right: 20em; */
 
-}
 .btn2 > a {
     text-decoration: none;
     color: var(--light);
@@ -247,3 +254,48 @@ p{
     margin-top: 40%;
 
 }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+    background-color: var(--primary);
+    
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-image {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .short-disc{
+      font-size: 2em ;
+  }
+  .med-name{
+      font-size:4em;
+
+  }
+  .medicines{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 4em;
+  }
+  .medicines-final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 4em;
+  }
+  .med-disc{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
